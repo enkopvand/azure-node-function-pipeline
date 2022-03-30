@@ -14,11 +14,17 @@ func init --worker-runtime node --language typescript --docker
 1. Create a settings.json in your vscode folder with:
 ```json
 {
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
   "editor.codeActionsOnSave": {
+    "source.fixAll": true,
     "source.fixAll.eslint": true
-  }
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }
 ```
 
