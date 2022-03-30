@@ -33,6 +33,7 @@ func init --worker-runtime node --language typescript --docker
 ```json
 "devDependencies": {
     "@azure/functions": "^3.0.0",
+    "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "eslint": "^8.10.0",
